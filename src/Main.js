@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useEffect, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import styled from "styled-components";
 import axios from "axios";
@@ -58,12 +58,12 @@ const Content = styled.div`
   gap: 110px;
 `;
 
-const LeftBox = styled.div`
+const LeftBox = styled.section`
   display: flex;
   flex: 1;
   flex-wrap: wrap;
 `;
-const RightBox = styled.div`
+const RightBox = styled.section`
   display: flex;
   box-sizing: border-box;
   justify-content: center;
@@ -102,7 +102,7 @@ function Main() {
 
   return (
     <Container>
-      <div className="title">내가 좋아하는 동물</div>
+      <header className="title">내가 좋아하는 동물</header>
       {animals.length ? (
         <>
           <Content>

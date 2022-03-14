@@ -23,7 +23,7 @@ const Content = styled.div`
   font-size: 24px;
   font-weight: bold;
 `;
-const LikeBox = styled.div`
+const LikeBox = styled.section`
   flex: 1;
   padding: 47px 128px 100px;
   color: #006ebe;
@@ -37,7 +37,7 @@ const LikeBox = styled.div`
     margin-top: 30px;
   }
 `;
-const HateBox = styled.div`
+const HateBox = styled.section`
   flex: 1;
   padding: 47px 128px 100px;
   color: #d74b00;
@@ -57,7 +57,7 @@ function Classification() {
 
   return (
     <Container>
-      <div className="title">내가 좋아하는 동물</div>
+      <header className="title">내가 좋아하는 동물</header>
       <Content>
         <LikeBox>
           <div>좋아요</div>
